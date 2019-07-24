@@ -1,0 +1,32 @@
+{
+  "name": "functions",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "build": "tsc",
+    "serve": "npm run build && firebase serve --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "../deploy.sh local",
+    "deploy-dev": "../deploy.sh dev",
+    "deploy-qa": "../deploy.sh qa",
+    "deploy-prod": "../deploy.sh prod",
+    "logs": "./node_modules/.bin/firebase --project dev functions:log",
+    "logs-qa": "./node_modules/.bin/firebase --project qa functions:log",
+    "logs-prod": "./node_modules/.bin/firebase --project prod functions:log"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "~8.2.0",
+    "firebase-functions": "^3.1.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "tslint": "~5.18.0",
+    "typescript": "~3.5.3",
+    "firebase-tools": "^7.1.1"
+  },
+  "private": true
+}

@@ -1,0 +1,5 @@
+{
+    "bucketName": "first-firestore.appspot.com",
+    "baseURL": "first-firestore-firebaseapp.com",
+    "env": "LOCAL"
+}
