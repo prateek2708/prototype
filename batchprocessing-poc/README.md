@@ -39,4 +39,4 @@ just run:
 The command will run some checks prior to uploading the function to firebase.
 
 
-endpoint- https://first-firestore-228014.firebaseapp.com/batch-service/api/v1
+endpoint- https://DB_URL.firebaseapp.com/batch-service/api/v1
